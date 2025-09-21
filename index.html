@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
 
     <style>
-        
-        
-
         body {
             font-family: 'Signika Negative', sans-serif;
             color: white;
@@ -25,11 +22,7 @@
             background-size: 100vw;
 
         }
-
-
-
-        .navbar,
-        ul {
+        .navbar, ul {
             display: inline-block;
             margin: 11px;
             padding-left: 20px;
@@ -57,7 +50,6 @@
 
         /* for logo */
         .left {
-            /* border: 2px solid red; */
             display: inline-block;
             position: absolute;
             left: 21px;
@@ -78,7 +70,6 @@
             display: block;
             width: 67%;
             margin: 30px auto;
-            /* vertical and horizontal margin ratio */
 
 
         }
@@ -86,7 +77,6 @@
         .right {
             /* border: 2px solid violet; */
             display: inline-block;
-            /* according to parent element (main outer body of website) */
             position: absolute;
             right: 8px;
             top: 26px;
@@ -131,7 +121,6 @@
             color: rgb(255, 242, 223);
             font-weight: 600;
             font-size: 50px;
-            /* border: 2px solid red; */
             width: 49%;
             margin: 2px auto;
             margin-left: 450px;
@@ -142,7 +131,6 @@
 
         .container2 span {
             display: block;
-            /* border: 2px solid red; */
             text-align: center;
             width: 58%;
             margin: 12px auto;
@@ -155,12 +143,10 @@
             bottom: 1px;
             right: 1px;
             width: 30%;
-            /* height: 10%; */
         }
 
         .formgroup input {
             font-family: 'Signika Negative', sans-serif;
-            ;
             margin: 4px auto;
             width: 320px;
             padding: 4px 2px;
@@ -250,13 +236,18 @@
             <div class="formgroup">
                 <input type="text" placeholder="Enter Your Home Address">
             </div>
-            <button class="btn">Submit</button>
+            <button class="btn" type="button" onclick="showAlert()">Submit</button>
 
 
         </form>
 
 
     </div>
+    <script>
+        function showAlert() {
+            alert("Your details have been submitted. Thank you for choosing our service.");
+        }
+    </script>
 
 </body>
 
